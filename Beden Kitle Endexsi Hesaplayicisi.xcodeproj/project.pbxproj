@@ -58,13 +58,37 @@
 			children = (
 				B47E4DAF2C98AF0B0056579D /* AppDelegate.swift */,
 				B47E4DB12C98AF0B0056579D /* SceneDelegate.swift */,
-				B47E4DB32C98AF0B0056579D /* ViewController.swift */,
-				B47E4DB52C98AF0B0056579D /* Main.storyboard */,
+				B4F479EE2C98BBB100033F1C /* Model */,
+				B4F479EC2C98BB9500033F1C /* View */,
+				B4F479ED2C98BBA400033F1C /* Controller */,
 				B47E4DB82C98AF0C0056579D /* Assets.xcassets */,
-				B47E4DBA2C98AF0C0056579D /* LaunchScreen.storyboard */,
 				B47E4DBD2C98AF0C0056579D /* Info.plist */,
 			);
 			path = "Beden Kitle Endexsi Hesaplayicisi";
+			sourceTree = "<group>";
+		};
+		B4F479EC2C98BB9500033F1C /* View */ = {
+			isa = PBXGroup;
+			children = (
+				B47E4DB52C98AF0B0056579D /* Main.storyboard */,
+				B47E4DBA2C98AF0C0056579D /* LaunchScreen.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		B4F479ED2C98BBA400033F1C /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				B47E4DB32C98AF0B0056579D /* ViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		B4F479EE2C98BBB100033F1C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
