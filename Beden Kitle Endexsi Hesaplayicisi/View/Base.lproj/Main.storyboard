@@ -20,7 +20,7 @@
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="iLg-hd-b6X">
                                 <rect key="frame" x="0.0" y="59" width="393" height="759"/>
                             </imageView>
-                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="150" minValue="100" maxValue="230" translatesAutoresizingMaskIntoConstraints="NO" id="DfV-H5-1Mf">
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="3" minValue="0.0" maxValue="3" translatesAutoresizingMaskIntoConstraints="NO" id="DfV-H5-1Mf">
                                 <rect key="frame" x="8" y="647.66666666666663" width="377" height="16"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="15" id="m31-is-P2Z"/>
