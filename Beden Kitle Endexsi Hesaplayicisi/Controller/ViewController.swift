@@ -23,6 +23,11 @@ class ViewController: UIViewController {
     }
 
     @IBAction func calculateButtonPressed(_ sender: UIButton) {
+        let height = heightSlider.value
+        let weight = weightSlider.value
+        let bmi =  weight / (height * height )
+        print(bmi)
+        
     }
     
     @IBAction func heightSliderChanged(_ sender: UISlider) {
