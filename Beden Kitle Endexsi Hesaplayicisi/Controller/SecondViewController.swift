@@ -9,19 +9,19 @@ import UIKit
 
 class SecondViewController: UIViewController {
     
-    var bmiValue = "0.0"
+    @IBOutlet weak var resultLabel: UILabel!
+    @IBOutlet weak var adviceLabel: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        view.backgroundColor = .blue
-        let label = UILabel()
-        label.text = "Bmi : \(bmiValue)"
-        label.textColor = .white
-        label.translatesAutoresizingMaskIntoConstraints = false
-        view.addSubview(label)
+       
         
     }
     
-
+    @IBAction func recalculateButton(_ sender: UIButton) {
+        
+    }
+    
    
 }
