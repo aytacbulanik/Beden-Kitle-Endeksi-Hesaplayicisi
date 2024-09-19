@@ -12,10 +12,12 @@ class SecondViewController: UIViewController {
     @IBOutlet weak var resultLabel: UILabel!
     @IBOutlet weak var adviceLabel: UILabel!
     
+    var bmiValue : String?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-       
+        guard let bmiValue else { return }
+        resultLabel.text = bmiValue
         
     }
     

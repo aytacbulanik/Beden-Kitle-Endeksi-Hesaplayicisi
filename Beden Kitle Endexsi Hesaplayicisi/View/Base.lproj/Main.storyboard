@@ -131,6 +131,7 @@
                         <outlet property="heightSlider" destination="DfV-H5-1Mf" id="QSU-nf-gEw"/>
                         <outlet property="weightLabel" destination="LnT-WA-kJS" id="DqZ-z2-Q9s"/>
                         <outlet property="weightSlider" destination="vcj-uA-ThE" id="OwH-ss-cVl"/>
+                        <segue destination="X2k-Bl-iUZ" kind="presentation" identifier="secondSegue" id="iia-Ru-8oH"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -142,14 +143,14 @@
             <objects>
                 <viewController id="X2k-Bl-iUZ" customClass="SecondViewController" customModule="Beden_Kitle_Endexsi_Hesaplayicisi" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Awq-On-Xdm">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="rj9-sc-IZb">
-                                <rect key="frame" x="0.0" y="59" width="393" height="759"/>
+                                <rect key="frame" x="0.0" y="0.0" width="393" height="842"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="P1y-Zb-lJK">
-                                <rect key="frame" x="10" y="748" width="373" height="50"/>
+                                <rect key="frame" x="10" y="772" width="373" height="50"/>
                                 <color key="backgroundColor" red="0.48627454040000001" green="0.57647061349999995" blue="0.73333334920000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="nH1-Mb-wVM"/>
@@ -165,7 +166,7 @@
                                 </connections>
                             </button>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="center" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="iZo-WI-3A4">
-                                <rect key="frame" x="131.66666666666669" y="365.66666666666669" width="129.66666666666669" height="121"/>
+                                <rect key="frame" x="131.66666666666669" y="360.66666666666669" width="129.66666666666669" height="121"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="RESULT" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="r1i-dG-Kpb">
                                         <rect key="frame" x="17.333333333333343" y="0.0" width="95" height="37"/>
