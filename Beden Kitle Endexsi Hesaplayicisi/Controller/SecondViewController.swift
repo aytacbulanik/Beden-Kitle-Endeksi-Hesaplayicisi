@@ -8,11 +8,18 @@
 import UIKit
 
 class SecondViewController: UIViewController {
-
+    
+    var bmiValue = "0.0"
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        
+        view.backgroundColor = .blue
+        let label = UILabel()
+        label.text = "Bmi : \(bmiValue)"
+        label.textColor = .white
+        label.translatesAutoresizingMaskIntoConstraints = false
+        view.addSubview(label)
+        
     }
     
 
