@@ -16,7 +16,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var calculateButtonOut: UIButton!
     @IBOutlet weak var weightLabel: UILabel!
     
-    var bmi: Float = 0
+    var calculateManager = CalculateManager()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -26,7 +26,8 @@ class ViewController: UIViewController {
     @IBAction func calculateButtonPressed(_ sender: UIButton) {
         let height = heightSlider.value
         let weight = weightSlider.value
-        bmi =  weight / (height * height )
+        
+        calculateManager.calculateBMI(height: height, weight: weight)
         
         performSegue(withIdentifier: "secondSegue", sender: self)
         
@@ -43,7 +44,7 @@ class ViewController: UIViewController {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "secondSegue" {
             let secondVC = segue.destination as! SecondViewController
-            secondVC.bmiValue = String(format: "%.1f", bmi)
+            secondVC.bmiValue = calculateManager.getBMIValue()
         }
     }
 }
