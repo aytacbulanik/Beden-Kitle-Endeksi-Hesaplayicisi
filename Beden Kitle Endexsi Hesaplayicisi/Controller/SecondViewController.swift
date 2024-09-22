@@ -22,7 +22,7 @@ class SecondViewController: UIViewController {
     }
     
     @IBAction func recalculateButton(_ sender: UIButton) {
-        
+        self.dismiss(animated: true)
     }
     
    

@@ -8,13 +8,19 @@
 import Foundation
 
 struct CalculateManager {
-    var bmi : Float = 0.0
+    var bmi : BMI?
     
     mutating func calculateBMI(height: Float, weight: Float)  {
-        bmi = weight / pow(height, 2)
+        let bmiValue = weight / pow(height, 2)
+        
     }
     
     func getBMIValue() -> String{
-        String(format: "%.1f", bmi)
+        if let safeBmi = bmi?.value {
+            return String(format: "%.1f", safeBmi)
+        } else {
+            return "0.0"
+        }
+        
     }
 }
