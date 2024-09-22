@@ -45,6 +45,8 @@ class ViewController: UIViewController {
         if segue.identifier == "secondSegue" {
             let secondVC = segue.destination as! SecondViewController
             secondVC.bmiValue = calculateManager.getBMIValue()
+            secondVC.bmiAdvice = calculateManager.getBMIAdvice()
+            secondVC.bmiColor = calculateManager.getBMIColor()
         }
     }
 }
